@@ -1,0 +1,23 @@
+{
+  "name": "jbctopografia",
+  "version": "1.0.0",
+  "description": "Website for JBC topography",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidgq10/jbctopografia~.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidgq10/jbctopografia~/issues"
+  },
+  "homepage": "https://github.com/davidgq10/jbctopografia~#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
