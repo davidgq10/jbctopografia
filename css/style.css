@@ -46,4 +46,10 @@ body {
   min-height: 50rem;
 }
 
+.navbar {
+  background-color: red;
+  width: 100vw;
+  height: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */
