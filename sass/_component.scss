@@ -1,5 +1,47 @@
-.navbar{
-    background-color: red;
-    width: 100vw;
-    height: 2rem;
+.menu {
+  display: flex;
+  background-color: var(--grey-dark-1);
+  width: 100vw;
+  height: 5rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+
+  &__item {
+    color: var(--grey-light-4);
+    padding: 0;
+    //border: 1px solid var(--grey-light-4);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-seri;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 10rem;
+    text-align: center;
+
+    &:hover {
+      color: var(--color-primary-dark);
+    }
+
+  }
+}
+
+.btn {
+  //Colors
+  &--blue {
+    background-color: var(--color-primary-dark);
+    color: var(--grey-light-1);
+  }
+
+  //Heights
+  &--medium {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-seri;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 12rem;
+    text-align: center;
+    height: 3rem;
+    border-radius: 2rem;
+    line-height: 3rem;
+  }
 }

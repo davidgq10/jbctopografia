@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #a3d025;
-  --color-primary-light: #36f2aa;
+  --color-primary: hsl(48.21, 100%, 89.02%);
+  --color-primary-light: hsl(157, 88%, 58%);
   --color-primary-dark: #0b724a;
   --grey-light-1: #faf9f9;
   --grey-light-2: #f4f2f2;
@@ -39,6 +39,7 @@ body {
 }
 
 .container {
+  display: flex;
   max-width: 100%;
   margin: 1rem auto;
   background-color: var(--grey-light-1);
@@ -46,10 +47,41 @@ body {
   min-height: 50rem;
 }
 
-.navbar {
-  background-color: red;
+.menu {
+  display: flex;
+  background-color: var(--grey-dark-1);
   width: 100vw;
-  height: 2rem;
+  height: 5rem;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+}
+.menu__item {
+  color: var(--grey-light-4);
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-seri;
+  font-size: 1.5rem;
+  text-decoration: none;
+  width: 10rem;
+  text-align: center;
+}
+.menu__item:hover {
+  color: var(--color-primary-dark);
+}
+
+.btn--blue {
+  background-color: var(--color-primary-dark);
+  color: var(--grey-light-1);
+}
+.btn--medium {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-seri;
+  font-size: 1.5rem;
+  text-decoration: none;
+  width: 12rem;
+  text-align: center;
+  height: 3rem;
+  border-radius: 2rem;
+  line-height: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
