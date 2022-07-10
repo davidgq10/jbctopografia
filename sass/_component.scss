@@ -1,11 +1,19 @@
-.menu {
+.navbar {
   display: flex;
-  background-color: var(--grey-dark-1);
-  width: 100vw;
-  height: 5rem;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
+  height: 4rem;
+  &__icon{
+    margin-left: 1rem;
+    width: auto;
+    height: 4rem;
+    border-radius: 100%;
+    object-fit:cover;
+    transition-duration: 1s;
+    &:hover{
+      transform: rotate(-5deg);
+    }
+  }
 
   &__item {
     color: var(--grey-light-4);
@@ -19,7 +27,8 @@
     text-align: center;
 
     &:hover {
-      color: var(--color-primary-dark);
+      color: var(--grey-light-1);
+      text-shadow: 0.5px 1px 2px  var(--grey-light-1);
     }
 
   }
@@ -27,9 +36,9 @@
 
 .btn {
   //Colors
-  &--blue {
+  &--yellow {
     background-color: var(--color-primary-dark);
-    color: var(--grey-light-1);
+    color: var(--grey-dark-1);
   }
 
   //Heights
@@ -43,5 +52,21 @@
     height: 3rem;
     border-radius: 2rem;
     line-height: 3rem;
+  }
+}
+
+.main{
+  &__background{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: auto;
+  }
+  &__title{
+    height: 0%;
+    position: relative;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
   }
 }

@@ -1,7 +1,7 @@
 :root {
   --color-primary: hsl(48.21, 100%, 89.02%);
   --color-primary-light: hsl(157, 88%, 58%);
-  --color-primary-dark: #0b724a;
+  --color-primary-dark: hsl(54.1,98.39%,48.63%);
   --grey-light-1: #faf9f9;
   --grey-light-2: #f4f2f2;
   --grey-light-3: #f0eeee;
@@ -35,7 +35,6 @@ body {
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
 }
 
 .container {
@@ -47,16 +46,37 @@ body {
   min-height: 50rem;
 }
 
-.menu {
+.header {
   display: flex;
   background-color: var(--grey-dark-1);
-  width: 100vw;
-  height: 5rem;
+  max-width: 100%;
+  height: 4.5rem;
+  align-items: center;
+}
+
+.main {
+  max-width: 100%;
+  height: 50rem;
+}
+
+.navbar {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2rem;
+  height: 4rem;
 }
-.menu__item {
+.navbar__icon {
+  margin-left: 1rem;
+  width: auto;
+  height: 4rem;
+  border-radius: 100%;
+  object-fit: cover;
+  transition-duration: 1s;
+}
+.navbar__icon:hover {
+  transform: rotate(-5deg);
+}
+.navbar__item {
   color: var(--grey-light-4);
   padding: 0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-seri;
@@ -65,13 +85,14 @@ body {
   width: 10rem;
   text-align: center;
 }
-.menu__item:hover {
-  color: var(--color-primary-dark);
+.navbar__item:hover {
+  color: var(--grey-light-1);
+  text-shadow: 0.5px 1px 2px var(--grey-light-1);
 }
 
-.btn--blue {
+.btn--yellow {
   background-color: var(--color-primary-dark);
-  color: var(--grey-light-1);
+  color: var(--grey-dark-1);
 }
 .btn--medium {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-seri;
@@ -82,6 +103,20 @@ body {
   height: 3rem;
   border-radius: 2rem;
   line-height: 3rem;
+}
+
+.main__background {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  height: auto;
+}
+.main__title {
+  height: 0%;
+  position: relative;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

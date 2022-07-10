@@ -2,7 +2,7 @@
 :root {
   --color-primary: hsl(48.21, 100%, 89.02%);
   --color-primary-light: hsl(157, 88%, 58%);
-  --color-primary-dark: #0b724a;
+  --color-primary-dark: hsl(54.1,98.39%,48.63%);
 
   --grey-light-1: #faf9f9;
   --grey-light-2: #f4f2f2;
@@ -45,5 +45,5 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 
-  min-height: 100vh;
+ // min-height: 100vh;
 }

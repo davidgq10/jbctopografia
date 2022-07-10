@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/davidgq10/jbctopografia~#readme",
   "dependencies": {
+    "sas": "^3.0.4",
     "sass": "^1.53.0"
   }
 }
