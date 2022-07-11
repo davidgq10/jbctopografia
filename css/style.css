@@ -69,8 +69,10 @@ body {
   transform: rotate(-5deg);
 }
 .navbar__item {
-  margin: 5px;
+  margin: 10px;
   height: 4rem;
+}
+.navbar__item__text {
   line-height: 4rem;
   color: var(--grey-light-4);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-seri;
@@ -78,10 +80,17 @@ body {
   text-decoration: none;
   width: 10rem;
   text-align: center;
+  /*&:hover {
+    color: var(--grey-light-1);
+    text-shadow: 0.5px 1px 2px var(--grey-light-1);
+  }*/
 }
-.navbar__item:hover {
+.navbar__item__icon {
+  color: var(--grey-light-4);
+  margin: 5px 5px;
+}
+.navbar__item:hover > .navbar__item__icon, .navbar__item:hover > .navbar__item__text {
   color: var(--grey-light-1);
-  text-shadow: 0.5px 1px 2px var(--grey-light-1);
 }
 
 .btn--yellow {
