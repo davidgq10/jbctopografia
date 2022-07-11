@@ -1,4 +1,6 @@
 .navbar {
+
+  padding-left: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -6,7 +8,6 @@
   align-items: center;
 
   &__icon {
-    margin-left: 1rem;
     width: auto;
     height: 4rem;
     border-radius: 100%;
@@ -20,7 +21,10 @@
   &__item {
     margin: 10px;
     height: 4rem;
+    cursor: pointer;
+    transition-duration: 0.4s;
     &__text {
+      padding-right: 0.5rem;
       line-height: 4rem;
       color: var(--grey-light-4);
       font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -44,6 +48,11 @@
     &:hover > &__icon, &:hover > &__text{
       color: var(--grey-light-1);
     }
+    &:hover{
+      transform: translateY(-2px);
+      box-shadow: 0px 2px  yellow;
+     //border-bottom-style: 1px solid yellow;
+    }
 
   }
 }
@@ -53,6 +62,10 @@
   &--yellow {
     background-color: var(--color-primary-dark);
     color: var(--grey-dark-1);
+    &:hover{
+      box-shadow: 0px 4px 4px var(--color-primary-dark);
+      border: 1px solid yellow
+    }
   }
 
   //Heights
@@ -67,6 +80,7 @@
     height: 3rem;
     line-height: 3rem;
     border-radius: 2rem;
+    
   }
 }
 

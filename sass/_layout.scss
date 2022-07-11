@@ -1,9 +1,9 @@
 .header{
   display: flex;
   background-color: var(--grey-dark-1);
-  width: 100vw;
+  max-width: 100%;
   min-height: 5rem;
-align-content: center;  
+  align-content: center;  
 }
 
 .main{
