@@ -3,19 +3,21 @@
   justify-content: flex-start;
   align-items: center;
   height: 4rem;
-  &__icon{
+
+  &__icon {
     margin-left: 1rem;
     width: auto;
     height: 4rem;
     border-radius: 100%;
-    object-fit:cover;
+    object-fit: cover;
     transition-duration: 1s;
-    &:hover{
+    &:hover {
       transform: rotate(-5deg);
     }
   }
 
   &__item {
+    height: 100%;
     color: var(--grey-light-4);
     padding: 0;
     //border: 1px solid var(--grey-light-4);
@@ -28,9 +30,9 @@
 
     &:hover {
       color: var(--grey-light-1);
-      text-shadow: 0.5px 1px 2px  var(--grey-light-1);
+      text-shadow: 0.5px 1px 2px var(--grey-light-1);
+      background: var(--grey-dark-2);
     }
-
   }
 }
 
@@ -55,14 +57,14 @@
   }
 }
 
-.main{
-  &__background{
+.main {
+  &__background {
     position: relative;
     top: 0px;
     width: 100%;
     height: auto;
   }
-  &__title{
+  &__title {
     height: 0%;
     position: relative;
     top: 8px;
