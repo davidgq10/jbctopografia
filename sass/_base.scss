@@ -4,14 +4,14 @@
   --color-primary-light: hsl(157, 88%, 58%);
   --color-primary-dark: hsl(54.1, 98.39%, 48.63%);
 
-  --grey-light-1: #faf9f9;
-  --grey-light-2: #f4f2f2;
-  --grey-light-3: #f0eeee;
-  --grey-light-4: #ccc;
+  --grey-light-1: #f6f6f6;
+  --grey-light-2: #e6e6e6;
+  --grey-light-3: #d5d5d5;
+  --grey-light-4: #b9b9b9;
 
-  --grey-dark-1: hsl(0, 0%, 20%);
-  --grey-dark-2: hsl(0, 0%, 23%);
-  --grey-dark-2: hsl(0, 0%, 47%);
+  --grey-dark-1: hsl(0, 0%, 15%);
+  --grey-dark-2: hsl(0, 0%, 29%);
+  --grey-dark-2: hsl(0, 0%, 42%);
   --grey-dark-3: hsl(0, 0%, 60%);
 
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
@@ -46,5 +46,4 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 
-  // min-height: 100vh;
 }
