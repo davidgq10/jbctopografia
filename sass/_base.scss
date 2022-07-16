@@ -1,8 +1,8 @@
 //Colors definition
 :root {
-  --color-primary: hsl(48.21, 100%, 89.02%);
-  --color-primary-light: hsl(157, 88%, 58%);
-  --color-primary-dark: hsl(54.1, 98.39%, 48.63%);
+  --color-primary: rgb(252, 255, 79);
+  --color-primary-light: hsl(47, 53%, 85%);
+  --color-primary-dark: rgb(187, 172, 34);
 
   --grey-light-1: #f6f6f6;
   --grey-light-2: #e6e6e6;
@@ -31,6 +31,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; //1rem=10px
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
